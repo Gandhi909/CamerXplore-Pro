@@ -1,0 +1,53 @@
+footer {
+    width: 100%;
+    background: var(--background);
+    transform: translateY(65px);
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: gray;
+    font-family: var(--font-sans);
+    justify-content: center;
+    font-size: 0.9rem;
+    border-top: solid 1px var(--backgroundBlur);
+}
+.descNav {
+   display: flex;
+     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.descNav strong {
+    color: var(--text-color);
+}
+.descNav li:hover a{
+    color: var(--primary);
+}
+.navigation li,.descNav .contact li{
+     list-style: none;
+     margin: 0.5rem 0;
+     display: flex;
+     align-items: center;
+     gap: 2px;
+}
+.descNav li a{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}
+.navigation li a {
+    transition: letter-spacing 0.5s;
+}
+.navigation li a:hover {
+    letter-spacing: 1px;
+}
+.droitsAuteur {
+    text-align: center;
+    border-top:  solid 1px var(--backgroundBlur);
+    padding-top: 2.5rem;
+}
+@media (max-width:720px) {
+    .descNav{
+        flex-direction: column;
+    }
+}

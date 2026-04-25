@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Finlandica:ital,wght@0,400..700;1,400..700&family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+     --primary: #ce1126;
+     --primary-transparent: #ce112719;
+     --secondary: #007a5e;
+     --accent: #fcd116;
+      --headFoot: #fafafa;
+     --backgroundBlur: #4742422b;
+     --text-card: #0d1510;
+     --background: #fafafa;
+      --text-color: #0d1510;
+       --card: #ffffff;
+       --bacgroundOpacity: #e6c0c36c;
+       --background-Options: #ffff;
+       --linecolor: #aeafafa2;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Merriweather', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --section-color: #cdcbcb;
+}
+body {
+    --bacgroundOpacity: #1c191c6c;
+    --headFoot: #0d151079;
+    --card: #121915;
+    --background: #0a0f0c;
+    --text-color: #fafafa;
+    --text-card: #f1f5f2;
+    --backgroundBlur: #ffffff37;
+     --linecolor: #c8ebeba2;
+     transition: 0.5s;
+     --section-color: #2828287a;
+     --background-Options: #06050550;
+}
+body {
+    width: 100%;
+}
+main{
+    width: 100%;
+}
+.hero-geographie{
+    position: relative;
+  overflow: hidden;
+  height: 25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-geographie img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.flutter {
+    background-color: var(--bacgroundOpacity);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+.container-hero {
+     z-index: 2;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+}
+.container-hero h1{
+     font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+     background: linear-gradient(to right,var(--primary),var(--accent),var(--secondary));
+     font-size: 5rem;
+     background-clip: text;
+     color: transparent;
+     background-position: fixed;
+     animation: textanime 8s linear infinite;
+     background-size: 500%;
+}
+.container-hero h3{
+    font-family: var(--font-sans);
+}
+@keyframes textanime {
+    to{
+        background-position: 200%;
+    }
+}
+.caracteristiques {
+    background: var(--section-color);
+    padding: 3.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+ .titleSection,.regionSection h2 {
+    font-size: clamp(25px,8vh,3rem);
+    font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+ .infoSection {
+     margin-top: 10px;
+    font-family: var(--font-sans);
+    color: gray;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.containerCarac{
+    display: flex;
+    gap: 1rem;
+}
+.cardCarac {
+    background-color: var(--background-Options);
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 20px;
+    outline: 0.5px solid #93919168;
+    gap: 1rem;
+    height: 150px;
+    font-family: var(--font-sans);
+    text-align: center;
+}
+@media (max-width:900px) {
+    .containerCarac {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:464px) {
+    .containerCarac {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.valueCarac {
+    color: var(--primary);
+    overflow-wrap: break-word;
+}
+.infoCarac {
+    color: gray;
+    font-size: 0.9rem;
+}
+.climatSection{
+    background: var(--background );
+    padding: 3.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+.logoClimat {
+    background: linear-gradient(to right, #ce1127a4);
+    width: 50px;
+    padding: 0.7rem;
+    color: #ffff;
+    border-radius: 10px;
+}
+.containerSaison {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.cardClimat {
+    flex-basis: 400px;
+    padding: 2.5rem;
+    flex-grow: 1;
+    background-color: var(--background-Options);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    outline: #939191;
+    border: none;
+    border-radius: 20px;
+    border: solid 0.5px rgba(128, 128, 128, 0.568);
+    font-family: var(--font-sans);
+}
+.cardClimat h3,.cardEcosys h3 {
+    color: var(--text-card);
+    font-size: 1.5rem;
+}
+.cardClimat strong {
+    color: var(--secondary);
+}
+.cardClimat p,.cardEcosys p {
+    color: gray;
+}
+.ecosys {
+     background: var(--backgroundBlur );
+    padding: 3.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+.containerEcosys {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+}
+.cardEcosys {
+    flex-basis: 200px;
+    padding: 2.5rem;
+    flex: 1;
+    background-color: var(--background-Options);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    outline: #939191;
+    border: none;
+    border-radius: 20px;
+    border: solid 0.5px rgba(128, 128, 128, 0.568);
+    font-family: var(--font-sans);
+}
+.logoEcosys {
+   background: linear-gradient(to right,#007a5d30);
+  padding: 1rem;
+  width: 65px;
+  border-radius: 10px;
+  color: var(--secondary);
+}
+@media (max-width:750px) {
+    .containerEcosys{
+        flex-direction: column;
+    }
+}
+.regionSection {
+    background: var(--background);
+    padding: 3.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+.containerRegions {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+    .cardRegions {
+    background-color: var(--background-Options);
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    outline: 0.5px solid #93919168;
+    gap: 1rem;
+     font-family: var(--font-sans);
+    flex: 1;
+    flex-grow: 1;
+    flex-basis: 300px;
+     box-shadow: -5px 0px 0 var(--primary);
+    }
+    .cardRegions path,.cardRegions svg {
+        color: var(--primary);
+    }
+    .titleRegion {
+        display: flex;
+        gap: 10px;
+    }
+    .cardRegions small {
+        color: gray;
+    }
+    .titleCard {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .biodiversite {
+            background: var(--backgroundBlur);
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    }
+    .containerImglionEtTitle {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 1rem 1rem;
+        width: 100%;
+        flex-grow: 1;
+    }
+    .containerImglionEtTitle div {
+        flex: 1;
+        height: 350px;
+    }
+    @media (max-width:750px) {
+    .containerImglionEtTitle {
+        flex-direction: column;
+    }
+    }
+     .containerImglionEtTitle .text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-family: var(--font-sans);
+        padding: 2.5rem;
+     }
+     .containerImglionEtTitle .text li {
+        margin: 0.7rem 0;
+        color: gray;
+        list-style: none;
+     }
+     .containerImglionEtTitle .text p {
+        font-size: 1.4rem;
+     }
+     .imgLion {
+        overflow: hidden;
+        position: relative;
+     }
+
+     .imgLion img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+     }
+     .imgLionT {
+        width: 100%;
+        height: 100%;
+        position: relative;
+     }

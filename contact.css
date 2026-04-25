@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Finlandica:ital,wght@0,400..700;1,400..700&family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+     --primary: #ce1126;
+     --primary-transparent: #ce112719;
+     --secondary: #007a5e;
+     --accent: #fcd116;
+      --headFoot: #fafafa;
+     --backgroundBlur: #4742422b;
+     --text-card: #0d1510;
+     --background: #fafafa;
+      --text-color: #0d1510;
+       --card: #ffffff;
+       --bacgroundOpacity: #e6c0c36c;
+       --backgroundForm: #000000;
+       --background-Options: #ffff;
+       --linecolor: #aeafafa2;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Merriweather', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --section-color: #cdcbcb;
+}
+body {
+    --bacgroundOpacity: #1c191c6c;
+    --headFoot: #0d151079;
+    --card: #121915;
+    --background: #0a0f0c;
+    --text-color: #fafafa;
+    --text-card: #f1f5f2;
+    --backgroundBlur: #ffffff37;
+     --linecolor: #c8ebeba2;
+     transition: 0.5s;
+     --section-color: #2828287a;
+     --background-Options: #06050550;
+}
+.container-hero {
+     z-index: 2;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+     background: linear-gradient(180deg,var(--backgroundBlur),var(--bacgroundOpacity));
+}
+.hero-geographie{
+    position: relative;
+  overflow: hidden;
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-hero h1{
+     font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+     background: linear-gradient(to right,var(--primary),var(--accent),var(--secondary));
+     font-size: 5rem;
+     background-clip: text;
+     color: transparent;
+     background-position: fixed;
+     animation: textanime 8s linear infinite;
+     background-size: 500%;
+}
+.container-hero h3{
+    font-family: var(--font-sans);
+}
+@keyframes textanime {
+    to{
+        background-position: 200%;
+    }
+}
+.contactContainer {
+     background: var(--background);
+    padding: 3.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+.containerCard {
+     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+}
+.cardContact {
+     flex-basis: 200px;
+    padding: 2.5rem;
+    flex: 1;
+    background-color: var(--backgroundBlur);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    outline: #939191;
+    border: none;
+    border-radius: 20px;
+    border: solid 0.5px rgba(128, 128, 128, 0.568);
+    font-family: var(--font-sans);
+}
+.cardContact p {
+    color: gray;
+}
+.logoCard {
+ background: linear-gradient(to right,#007a5d30);
+  padding: 1rem;
+  width: 65px;
+  border-radius: 10px;
+  color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 3rem 1rem;
+    gap: 3rem;
+}
+.formulaireConteneur {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:700px) {
+    .formulaireConteneur {
+        width: 95%;
+    }
+}
+.formulaireConteneur h1 {
+    font-size: 2.1rem;
+}
+.containerFormulaire {
+    background-color: var(--backgroundForm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+.containerFormulaire h2 {
+    color: #fff;
+}
+.inputGoup {
+    width: 100%;
+    position: relative;
+}
+.inputGoup label {
+    position: absolute;
+    left: 0;
+    color: black;
+    top: 5px;
+    left: 10px;
+    transition: 0.2s;
+    pointer-events: none;
+    color: gray;
+}
+.inputGoup input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: solid 0.5px var(--linecolor);
+    background-color: transparent;
+    color: var(--primary);
+    outline: none;
+}
+.inputGoup textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: solid 0.5px var(--linecolor);
+    padding: 1rem;
+    outline: none;
+    background-color: transparent;
+    color: var(--primary);
+}
+.inputGoup input:focus ~ label,
+.inputGoup input:valid ~ label{
+    top: -5px;
+    font-size: 14px;
+    background: var(--backgroundForm);
+    color: var(--primary);
+}
+.inputGoup textarea:valid ~ label,
+.inputGoup textarea:focus ~ label {
+      top: -5px;
+    font-size: 14px;
+    background: var(--backgroundForm);
+    color: var(--primary);
+}
+.groupSubmit {
+    width: 100%;
+}
+.groupSubmit input {
+    padding: 0.5rem 3rem;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.groupSubmit input:hover {
+    background-color: var(--primary);
+    color: #000;
+}
+.success {
+   background: var(--backgroundForm);
+    flex-grow: 1;
+    padding: 3rem;
+    margin: 2.5rem;
+    border-radius: 20px; 
+    text-align: center;
+}
+.circle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.circle h2 {
+    color: #fff;
+}
+.circle p{
+    color: gray;
+}
+.circle .logo {
+      background: linear-gradient(to right,#007a5d30);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.horore {
+       background: var(--backgroundBlur );
+    padding: 3.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    font-family: var(--font-sans);
+    justify-content: center;
+    align-items: center;
+}
+.horore h1 {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+}
+.horore p {
+    color: gray;
+    text-align: center;
+}
+.cardHorore {
+    width: 90%;
+    width: 350px;
+    background-color: var(--backgroundBlur);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 15px;
+}
+
+.horaireDate {
+    display: flex;
+    justify-content: space-between;
+}
+.date {
+    font-weight: bold;
+}
+.close{
+    color: var(--primary);
+}

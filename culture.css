@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Finlandica:ital,wght@0,400..700;1,400..700&family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+     --primary: #ce1126;
+     --primary-transparent: #ce112719;
+     --secondary: #007a5e;
+     --accent: #fcd116;
+      --headFoot: #fafafa;
+     --backgroundBlur: #4742422b;
+     --text-card: #0d1510;
+     --background: #fafafa;
+      --text-color: #0d1510;
+       --card: #ffffff;
+       --bacgroundOpacity: #e6c0c36c;
+       --background-Options: #ffff;
+       --linecolor: #aeafafa2;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Merriweather', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --section-color: #cdcbcb;
+
+}
+body {
+    --bacgroundOpacity: #1c191c6c;
+    --headFoot: #0d151079;
+    --card: #121915;
+    --background: #0a0f0c;
+    --text-color: #fafafa;
+    --text-card: #f1f5f2;
+    --backgroundBlur: #ffffff37;
+     --linecolor: #c8ebeba2;
+     transition: 0.5s;
+     --section-color: #2828287a;
+     --background-Options: #06050550;
+}
+body {
+    width: 100%;
+}
+main{
+    width: 100%;
+}
+.hero-culture{
+    position: relative;
+  overflow: hidden;
+  height: 25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-culture img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.flutter {
+    background-color: var(--bacgroundOpacity);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+.container-hero {
+     z-index: 2;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+}
+.container-hero h1{
+     font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+     background: linear-gradient(to right,var(--primary),var(--accent),var(--secondary));
+     font-size: 5rem;
+     background-clip: text;
+     color: transparent;
+     background-position: fixed;
+     animation: textanime 8s linear infinite;
+     background-size: 500%;
+}
+.container-hero h3{
+    font-family: var(--font-sans);
+}
+@keyframes textanime {
+    to{
+        background-position: 200%;
+    }
+}
+.culture-container{
+    background: var(--section-color);
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.optionContenue{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+}
+@media (max-width:500px) {
+    .optionContenue {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 1fr 1fr;
+        flex-wrap: nowrap;
+    }
+}
+.options {
+    flex-basis: 200px;
+    background-color: var(--background-Options);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: var(--font-sans);
+    font-weight: bold;
+    border-radius: 10px;
+    outline: 0.5px solid #93919168;
+    cursor: pointer;
+    border: none;
+    color: var(--text-card);
+    gap: 10px;
+}
+.options.normal {
+    flex-basis: 200px;
+    background-color: var(--background-Options);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: var(--font-sans);
+    font-weight: bold;
+    border-radius: 10px;
+    outline: 0.5px solid #93919168;
+    cursor: pointer;
+    border: none;
+    color: var(--text-card);
+    gap: 10px;
+}
+.options:hover {
+    background: var(--backgroundBlur);
+}
+.options:focus {
+    background: var(--backgroundBlur);
+}
+.options.activeBtn {
+     background: var(--backgroundBlur);
+}
+.options svg, svg path {
+    color: var(--text-card);
+}
+.container-traditions{
+   display: flex;
+   flex-direction: column;
+}
+.cultures-traditions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.cardTradition {
+    flex-basis: 400px;
+    padding: 2.5rem;
+    flex-grow: 1;
+    background-color: var(--background-Options);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    outline: #939191;
+    border: none;
+    border-radius: 20px;
+}
+.iconTradition{
+       background: linear-gradient(to right,#007a5d30,#fcd21629);
+    padding: 1rem;
+    width: 65px;
+    border-radius: 10px;
+   color: var(--secondary);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.iconTradition svg,.iconTradition svg path {
+    color: var(--secondary);
+}
+.cardTradition h3 {
+    font-size: 1.6rem;
+    font-family: var(--font-sans);
+}
+.cardTradition p{
+    font-family: var(--font-sans);
+    color: gray;
+    line-height: 1.8rem;
+}
+.fiesta-traditions {
+    display: flex;
+    width: 100%;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+.cardFiesta {
+      flex-basis: 300px;
+    padding: 2.5rem;
+    flex-grow: 1;
+    background-color: var(--background-Options);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    outline: 2px solid var(--primary-transparent);
+    border: none;
+    border-radius: 20px;
+}
+.cardFiesta:hover {
+    outline: 2px solid var(--primary);
+}
+.regionFiesta {
+    background-color: var(--primary);
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-sans);
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+}
+.nameFiesta {
+     font-size: 1.6rem;
+    font-family: var(--font-sans);
+}
+.infoFiesta {
+    font-family: var(--font-sans);
+    color: gray;
+    line-height: 1.8rem;
+}
+@media (max-width:750px) {
+    .fiesta-traditions{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.containerHistoire,.tribusContainer {
+    display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+.containerHistoire h1,.tribusContainer h1{
+     font-size: clamp(25px,8vh,3rem);
+    font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-align: center;
+ 
+}
+ .storyT {
+    font-family: var(--font-sans);
+    color: gray;
+    text-align: center;
+}
+.containerCardStory {
+   display: flex;
+    width: 100%;
+    margin: 2rem 0;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 0 2rem;
+    position: relative;
+}  
+.containerCardStory::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: var(--primary);
+    left: 50%;
+    right: 50%;
+    animation: barreAnime 5s infinite linear;
+    border-radius: 10px;
+} 
+@media (max-width:720px) {
+    .containerCardStory::after{
+        left: 0;
+    }
+}
+@keyframes barreAnime {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 100%;
+    }
+}
+.cardStory {
+    padding: 2.5rem;
+    flex-grow: 1;
+    background-color: var(--background-Options);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    outline: 2px solid var(--primary-transparent);
+    border: none;
+    border-radius: 20px;
+    font-family: var(--font-sans);
+}
+.regionPopulation{
+    display: flex;
+    gap: 2rem;
+}
+.cardTribus strong,.cardTribus b{
+     font-weight: bold;
+    background: linear-gradient(to right,#007a5d30,#fcd21629);
+    padding: 5px;
+    width: 100px;
+    border-radius: 20px;
+   color: var(--secondary);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.time{
+   font-weight: bold;
+    background: linear-gradient(to right,#007a5d30,#fcd21629);
+    padding: 5px;
+    width: 200px;
+    border-radius: 20px;
+   color: var(--secondary);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.noteB {
+    color: gray;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.noteB li {
+    display: flex;
+    align-items: center;
+}
+.infoTrib {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.8rem;
+}
+.infoTrib p,.cardTribus p {
+    color: gray;
+    font-style: italic;
+}
+
+
+.containerCardTribus{
+      display: flex;
+    width: 100%;
+    margin: 2rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.cardTribus{
+     padding: 2.5rem;
+    flex-grow: 1;
+    background-color: var(--background-Options);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    outline: 2px solid var(--primary-transparent);
+    border: none;
+    border-radius: 20px;
+    font-family: var(--font-sans);
+    width: 300px;
+}
+
+.imageCulturel{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 4rem 2rem;
+}
+.cultureImg {
+    flex: 1;
+    flex-basis: 300px;
+    height: 20rem;
+    overflow: hidden;
+    background-color: red;
+    border-radius: 20px;
+    position: relative;
+}
+.cultureImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    transition: 0.5s ease-out;
+}
+.cultureImg:hover img {
+    transform: scale(1.1);
+}
+
+.sectionLangues {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 1.5rem;
+   background: var(--backgroundBlur);
+   padding: 5rem 1rem;
+}
+.sectionLangues h3 {
+     font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+     background: linear-gradient(to right,var(--primary),var(--accent),var(--secondary));
+     font-size: 4rem;
+     background-clip: text;
+     color: transparent;
+     background-position: fixed;
+     animation: textanime 8s linear infinite;
+     background-size: 500%;
+}
+.descLangue {
+    font-size: 1.2rem;
+    color: gray;
+    font-family: var(--font-sans);
+}
+.containerLangueList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
+.containerLangueList .langue {
+    padding: 0.5rem 1rem;
+    border: 0.5px solid gray;
+    border-radius: 20px;
+    font-family: var(--font-sans);
+    font-weight: bold;
+}

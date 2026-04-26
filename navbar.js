@@ -10,10 +10,12 @@
     btnDarkOrClear.addEventListener('click',(e)=>{
     e.preventDefault();
       document.body.classList.toggle('dark-mode')
-      if(btnDarkOrClear.innerHTML === theme.soleil) {
+      if(btnDarkOrClear.innerHTML === theme.lune) {
         btnDarkOrClear.innerHTML = theme.lune
+        alert('fonctionnalité indisponible pour le moment')
       }else{
-        btnDarkOrClear.innerHTML = theme.soleil
+        btnDarkOrClear.innerHTML = theme.lune
+         alert('fonctionnalité indisponible pour le moment')
       }
     })
     let hamburger = document.querySelector('.hamburger');

@@ -136,28 +136,13 @@ main{
     color: var(--text-card);
     gap: 10px;
 }
-.options.normal {
-    flex-basis: 200px;
-    background-color: var(--background-Options);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
-    font-family: var(--font-sans);
-    font-weight: bold;
-    border-radius: 10px;
-    outline: 0.5px solid #93919168;
-    cursor: pointer;
-    border: none;
-    color: var(--text-card);
-    gap: 10px;
-}
 .options:hover {
     background: var(--backgroundBlur);
 }
 .options:focus {
     background: var(--backgroundBlur);
 }
+
 .options.activeBtn {
      background: var(--backgroundBlur);
 }
@@ -258,13 +243,12 @@ main{
 }
 
 
-
-.containerHistoire,.tribusContainer {
+.containerHistoire,.tribusContainer,.ContainerConteLegend {
     display: flex;
    flex-direction: column;
    gap: 2rem;
 }
-.containerHistoire h1,.tribusContainer h1{
+.containerHistoire h1,.tribusContainer h1,.ContainerConteLegend h1{
      font-size: clamp(25px,8vh,3rem);
     font-weight: bold;
   font-family: "Bebas Neue", sans-serif;
@@ -279,7 +263,7 @@ main{
     color: gray;
     text-align: center;
 }
-.containerCardStory {
+.containerCardStory{
    display: flex;
     width: 100%;
     margin: 2rem 0;
@@ -299,6 +283,15 @@ main{
     animation: barreAnime 5s infinite linear;
     border-radius: 10px;
 } 
+.containerCardConte {
+    display: flex;
+    width: 100%;
+    margin: 2rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    position: relative;
+}
 @media (max-width:720px) {
     .containerCardStory::after{
         left: 0;
@@ -332,8 +325,9 @@ main{
      font-weight: bold;
     background: linear-gradient(to right,#007a5d30,#fcd21629);
     padding: 5px;
-    width: 100px;
+    width: 150px;
     border-radius: 20px;
+    font-size: 0.9rem;
    color: var(--secondary);
    display: flex;
    justify-content: center;
@@ -422,7 +416,43 @@ main{
 .cultureImg:hover img {
     transform: scale(1.1);
 }
+.containerCardConte {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.cardConte {
+    padding: 2.5rem;
+    flex-grow: 1;
+    background-color: var(--background-Options);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    outline: 2px solid var(--primary-transparent);
+    border: none;
+    border-radius: 20px;
+    font-family: var(--font-sans);
+   width: 300px;
+}
 
+.cardConte p,em {
+    color: gray;
+}
+.cardConte h4 {
+    color: var(--secondary);
+}
+.presseConte {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary);
+}
+.cardConte small {
+    color: gray;
+    font-style: italic;
+}
+.presseConte svg path {
+    color: var(--primary);
+}
 .sectionLangues {
    width: 100%;
    display: flex;
@@ -431,6 +461,16 @@ main{
    gap: 1.5rem;
    background: var(--backgroundBlur);
    padding: 5rem 1rem;
+}
+.typeConte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-transparent);
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 10px;
+    border-radius: 20px;
 }
 .sectionLangues h3 {
      font-weight: bold;

@@ -250,6 +250,7 @@
                     <li> Lieu des animaux et espèces menacées</li>
                     <li> Écosystèmes tellement riche</li>
                 </ul>
+                <button id="pdfCapture" style="width: 200px; display: flex;justify-content: center; align-items: center; gap: 10px;font-weight: bold; color: #fff; background-color: #e31b32;border: none;border-radius: 10px;padding: 5px;cursor: pointer;">clique pour un PDF <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scroll w-8 h-8 text-primary group-hover:text-secondary transition-colors"><path d="M19 17V5a2 2 0 0 0-2-2H4"></path><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path></svg></button>
             </div>
             <div class="imgLion card">
                 <div class="imgLionT">
@@ -295,5 +296,9 @@
       document.documentElement.classList.add('dark-mode');
     }
   })();
+  document.getElementById('pdfCapture').addEventListener('click',(e)=>{
+    e.preventDefault()
+    window.print()
+  })
 </script>
 </html>

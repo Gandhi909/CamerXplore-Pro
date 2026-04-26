@@ -140,11 +140,12 @@ main{
     background: var(--backgroundBlur);
 }
 .options:focus {
-    background: var(--backgroundBlur);
+    background: var(--primary);
+    color: #fff;
 }
 
 .options.activeBtn {
-     background: var(--backgroundBlur);
+     background: var(--primary);
 }
 .options svg, svg path {
     color: var(--text-card);

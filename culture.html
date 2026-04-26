@@ -22,7 +22,7 @@
                 <li><a href="./tourisme.html">Tourisme</a></li>
                 <li><a href="./géographie.html">Géographie</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-            </ul>.
+            </ul>
             <div class="darkorclear">
             </div>
             <div class="burger">
@@ -254,7 +254,35 @@
                         </div>
                     </div>
                    </div>
+               </div>
+               <div class="ContainerConteLegend">
+               <h1 class="card">Contes, Légendes & Histoires</h1>
+               <h3 class="storyT">La sagesse ancestrale transmise de génération en génération</h3>
+                   <div class="containerCardConte">
+                    <div class="cardConte">
+                        <div class="presseConte"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scroll w-8 h-8 text-primary group-hover:text-secondary transition-colors"><path d="M19 17V5a2 2 0 0 0-2-2H4"></path><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path></svg> <div class="typeConte">Origine</div></div>
+                        <h3>La Légende de Ngog Lituba</h3>
+                        <em>Bassa</em>
+                        <p> Ngog Lituba, la pierre sacrée, est considérée comme le lieu d'origine du peuple Bassa. Selon la légende, c'est de cette pierre que sont sortis les premiers ancêtres Bassa.</p>
+                        <hr>
+                        <h4>Morale :</h4>
+                        <small>Symbolise l'unité et l'identité du peuple Bassa, rappelant l'importance des racines et de l'origine commune.</small>
+                    </div>
+                    <div class="cardConte">
+                        <div class="presseConte"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scroll w-8 h-8 text-primary group-hover:text-secondary transition-colors"><path d="M19 17V5a2 2 0 0 0-2-2H4"></path><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path></svg> <div class="typeConte">Conte Moral</div></div>
+                        <h3>Le Singe et le Léopard</h3>
+                        <em>Tradition Orale</em>
+                        <p>Un singe rusé réussit à échapper au léopard en utilisant son intelligence. Le léopard, confiant en sa force, sous-estime la malice du singe qui le piège.</p>
+                        <hr>
+                        <h4>Morale :</h4>
+                        <small>L'intelligence et la ruse peuvent triompher de la force brute. Il ne faut jamais sous-estimer plus petit que soi.</dsmall>
+                    </div>
+                    
+                    
                    
+                    
+                </div>
+            
                </div>
         </section>
         <section class="imageCulturel" id="culture">
@@ -308,34 +336,56 @@
    let tradition = document.getElementById('traditionBtn')
    let histoire = document.getElementById('histoireBtn')
    let tribus = document.getElementById('tribusBtn')
+   let conte = document.getElementById('legendBtn')
+   let contenuConte = document.querySelector('.ContainerConteLegend')
+   contenuConte.style.display = 'none'
+   tradition.classList.add('activeBtn')
    let contenuTradition = document.querySelector('.container-traditions')
-   contenuTradition.style.display = 'none'
+   contenuTradition.style.display = 'flex'
    let contenuHistoire = document.querySelector('.containerHistoire')
    contenuHistoire.style.display = 'none'
    let contenuTribus = document.querySelector('.tribusContainer')
    contenuTribus.style.display = 'none'
+  conte.addEventListener('click',(e)=>{
+    e.preventDefault()
+    tradition.classList.remove('activeBtn')
+    contenuHistoire.style.display = 'none'
+    contenuTribus.style.display = 'none'
+    contenuHistoire.style.display = 'none'
+    if(contenuHistoire.style.display == 'none' && contenuTribus.style.display == 'none'){
+       contenuConte.style.display = 'flex'
+       tradition.classList.remove('activeBtn')
+    }
+   })
    tradition.addEventListener('click',(e)=>{
     e.preventDefault()
     contenuHistoire.style.display = 'none'
     contenuTribus.style.display = 'none'
-    if(contenuHistoire.style.display == 'none' && contenuTribus.style.display == 'none'){
+    contenuConte.style.display = 'none'
+    if(contenuHistoire.style.display == 'none' && contenuTribus.style.display == 'none' && contenuConte.style.display == 'none'){
        contenuTradition.style.display = 'flex'
+       tradition.classList.remove('activeBtn')
     }
    })
    histoire.addEventListener('click',(e)=>{
     e.preventDefault()
     contenuTradition.style.display = 'none'
     contenuTribus.style.display = 'none'
-    if(contenuTradition.style.display == 'none' && contenuTribus.style.display == 'none'){
+    contenuConte.style.display = 'none'
+
+    if(contenuTradition.style.display == 'none' && contenuTribus.style.display == 'none' && contenuConte.style.display == 'none'){
        contenuHistoire.style.display = 'flex'
+       tradition.classList.remove('activeBtn')
     }
    })
     tribus.addEventListener('click',(e)=>{
     e.preventDefault()
     contenuTradition.style.display = 'none'
     contenuHistoire.style.display = 'none'
-    if(contenuTradition.style.display == 'none' && contenuHistoire.style.display == 'none'){
+    contenuConte.style.display = 'none'
+    if(contenuTradition.style.display == 'none' && contenuHistoire.style.display == 'none' && contenuConte.style.display == 'none'){
        contenuTribus.style.display = 'flex'
+       tradition.classList.remove('activeBtn')
     }
    })
 

@@ -317,6 +317,13 @@ main{
     border: none;
     border-radius: 20px;
     font-family: var(--font-sans);
+    cursor: pointer;
+}
+.cardStory:focus {
+    border: 2px solid var(--secondary);
+}
+.cardStory:hover {
+    outline: 2px solid var(--primary);
 }
 .regionPopulation{
     display: flex;

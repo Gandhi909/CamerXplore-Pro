@@ -116,9 +116,9 @@
             </div>
             <div class="containerHistoire">
                <h1 class="card">Histoire du cameroun</h1>
-               <h3 class="storyT">Des royaumes jusqu'aux temps moderne</h3>
+               <h3 class="storyT">Des royaumes jusqu'aux temps moderne <br> <small><em>double cliquez sur une histoire  pour copier votre histoire!</em></small> </h3>
                <div class="containerCardStory card">
-                        <div class="cardStory card">
+                        <div class="cardStory card" id="storyRoyaume">
                             <div class="time">Antiquité - XVe siècle</div>
                         <h3 class="nameFiesta">Les premiers Royaumes</h3>
                          <ul class="noteB">
@@ -127,7 +127,7 @@
                             <li><svg width="25px" height="25px" viewBox="-5.44 -5.44 26.88 26.88" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.29289 3.70711L1 11V15H5L12.2929 7.70711L8.29289 3.70711Z" fill="#fcd116"></path> <path d="M9.70711 2.29289L13.7071 6.29289L15.1716 4.82843C15.702 4.29799 16 3.57857 16 2.82843C16 1.26633 14.7337 0 13.1716 0C12.4214 0 11.702 0.297995 11.1716 0.828428L9.70711 2.29289Z" fill="#fcd116"></path> </g></svg> Développement du commerce transsaherien</li>
                          </ul>
                       </div>
-                      <div class="cardStory card">
+                      <div class="cardStory card" id="commerce">
                             <div class="time">XVe - XIXe siècle</div>
                         <h3 class="nameFiesta">Royaumes et Commerce</h3>
                          <ul class="noteB">
@@ -136,7 +136,7 @@
                             <li><svg width="25px" height="25px" viewBox="-5.44 -5.44 26.88 26.88" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.29289 3.70711L1 11V15H5L12.2929 7.70711L8.29289 3.70711Z" fill="#fcd116"></path> <path d="M9.70711 2.29289L13.7071 6.29289L15.1716 4.82843C15.702 4.29799 16 3.57857 16 2.82843C16 1.26633 14.7337 0 13.1716 0C12.4214 0 11.702 0.297995 11.1716 0.828428L9.70711 2.29289Z" fill="#fcd116"></path> </g></svg> Traite négrière sur la côte</li>
                          </ul>
                       </div>
-                      <div class="cardStory card">
+                      <div class="cardStory card" id="colonisation">
                             <div class="time">1884 - 1916</div>
                         <h3 class="nameFiesta">Colonisation Allemande</h3>
                          <ul class="noteB">
@@ -145,7 +145,7 @@
                             <li><svg width="25px" height="25px" viewBox="-5.44 -5.44 26.88 26.88" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.29289 3.70711L1 11V15H5L12.2929 7.70711L8.29289 3.70711Z" fill="#fcd116"></path> <path d="M9.70711 2.29289L13.7071 6.29289L15.1716 4.82843C15.702 4.29799 16 3.57857 16 2.82843C16 1.26633 14.7337 0 13.1716 0C12.4214 0 11.702 0.297995 11.1716 0.828428L9.70711 2.29289Z" fill="#fcd116"></path> </g></svg> Résistances locales contre la colonisation</li>
                          </ul>
                       </div>
-                      <div class="cardStory card">
+                      <div class="cardStory card" id="mandat">
                             <div class="time">1916 - 1960</div>
                         <h3 class="nameFiesta">Mandats Français et Britannique</h3>
                          <ul class="noteB">
@@ -154,7 +154,7 @@
                             <li><svg width="25px" height="25px" viewBox="-5.44 -5.44 26.88 26.88" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.29289 3.70711L1 11V15H5L12.2929 7.70711L8.29289 3.70711Z" fill="#fcd116"></path> <path d="M9.70711 2.29289L13.7071 6.29289L15.1716 4.82843C15.702 4.29799 16 3.57857 16 2.82843C16 1.26633 14.7337 0 13.1716 0C12.4214 0 11.702 0.297995 11.1716 0.828428L9.70711 2.29289Z" fill="#fcd116"></path> </g></svg> Lutte pour l'indépendance (UPC)</li>
                          </ul>
                       </div>
-                      <div class="cardStory card">
+                      <div class="cardStory card" id="independance">
                             <div class="time">1960 - Présent</div>
                         <h3 class="nameFiesta">Indépendance et République</h3>
                          <ul class="noteB">
@@ -257,7 +257,8 @@
                </div>
                <div class="ContainerConteLegend">
                <h1 class="card">Contes, Légendes & Histoires</h1>
-               <h3 class="storyT">La sagesse ancestrale transmise de génération en génération</h3>
+               <h3 class="storyT">La sagesse ancestrale transmise de génération en génération 
+            <br><small><i>Copier votre conte</i></small> </h3>
                    <div class="containerCardConte">
                     <div class="cardConte">
                         <div class="presseConte"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scroll w-8 h-8 text-primary group-hover:text-secondary transition-colors"><path d="M19 17V5a2 2 0 0 0-2-2H4"></path><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path></svg> <div class="typeConte">Origine</div></div>
@@ -267,6 +268,7 @@
                         <hr>
                         <h4>Morale :</h4>
                         <small>Symbolise l'unité et l'identité du peuple Bassa, rappelant l'importance des racines et de l'origine commune.</small>
+                         <button id="ngog" style="background-color: var(--primary); border: none; width: 80px; border-radius: 10px;color: #fff;font-weight: bold;margin: 5px;padding: 5px;cursor: pointer;">copier</button>
                     </div>
                     <div class="cardConte">
                         <div class="presseConte"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scroll w-8 h-8 text-primary group-hover:text-secondary transition-colors"><path d="M19 17V5a2 2 0 0 0-2-2H4"></path><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path></svg> <div class="typeConte">Conte Moral</div></div>
@@ -275,7 +277,8 @@
                         <p>Un singe rusé réussit à échapper au léopard en utilisant son intelligence. Le léopard, confiant en sa force, sous-estime la malice du singe qui le piège.</p>
                         <hr>
                         <h4>Morale :</h4>
-                        <small>L'intelligence et la ruse peuvent triompher de la force brute. Il ne faut jamais sous-estimer plus petit que soi.</dsmall>
+                        <small>L'intelligence et la ruse peuvent triompher de la force brute. Il ne faut jamais sous-estimer plus petit que soi.</dsmall> <br>
+                            <button id="singeLeo" style="background-color: var(--primary); border: none; width: 80px; border-radius: 10px;color: #fff;font-weight: bold;margin: 5px;padding: 5px;cursor: pointer;">copier</button>
                     </div>
                     
                     
@@ -351,8 +354,8 @@
     tradition.classList.remove('activeBtn')
     contenuHistoire.style.display = 'none'
     contenuTribus.style.display = 'none'
-    contenuHistoire.style.display = 'none'
-    if(contenuHistoire.style.display == 'none' && contenuTribus.style.display == 'none'){
+    contenuTradition.style.display = 'none'
+    if(contenuHistoire.style.display == 'none' && contenuTribus.style.display == 'none' && contenuTradition.style.display == 'none'){
        contenuConte.style.display = 'flex'
        tradition.classList.remove('activeBtn')
     }
@@ -388,7 +391,196 @@
        tradition.classList.remove('activeBtn')
     }
    })
+    document.getElementById('ngog').addEventListener('click',(e)=>{
+            e.preventDefault()
+            alert('Mythes de Ngog Lituba mcopier avec succes')
+            navigator.clipboard.writeText(`La population locale considère que Ngog Lituba est le lieu d’origine des peuples africains. La légende voudrait que lors de la course de l'Égypte ancienne[Quoi ?], les deux ancêtres[Qui ?] se seraient réfugiés dans la grotte de Ngog Lituba. Leur refuge aurait été préservé grâce à une araignée qui aurait rapidement tissé sa toile à l'entrée de la grotte. Les ennemis passèrent devant la grotte en la croyant inhabitée[4].
 
+D'autres mythes racontent que Ngog Lituba serait le lieu où Dieu se manifesta en premier en y créant les « esprits »[5]. `)
+    })
+    document.getElementById('singeLeo').addEventListener('click',(e)=>{
+        e.preventDefault()
+        alert('Conte du Singe et le Léopard copier avec succès')
+        navigator.clipboard.writeText(`Le Singe avec le Léopard
+Gagnaient de l’argent à la foire
+Ils affichaient chacun à part.
+L’un d’eux disait : Messieurs, mon mérite et ma gloire
+Sont connus en bon lieu ; le Roi m’a voulu voir ;
+         Et si je meurs il veut avoir
+Un manchon de ma peau ; tant elle est bigarrée,
+         Pleine de taches, marquetée,
+         Et vergetée[N 1], et mouchetée.
+La bigarrure plaît ; partant chacun le vit.
+Mais ce fut bientôt fait, bientôt chacun sortit.
+Le Singe de sa part disait : Venez de grâce,
+Venez messieurs. Je fais cent tours de passe-passe.
+Cette diversité dont on vous parle tant,
+Mon voisin Léopard l’a sur soi seulement ;
+Moi, je l’ai dans l’esprit : votre serviteur Gille,
+         Cousin et gendre de Bertrand,
+         Singe  du Pape en son vivant,
+         Tout fraîchement en cette ville
+Arrive en trois bateaux[N 2], exprès pour vous parler;
+Car il parle, on l’entend ; il sait danser, baller[N 3],
+         Faire des tours de toute sorte,
+Passer en des cerceaux; et le tout pour six blancs[N 4]
+Non messieurs, pour un sou; si vous n’êtes contents
+Nous rendrons à chacun son argent à la porte.
+Le Singe avait raison; ce n’est pas sur l’habit
+Que la diversité me plaît, c’est dans l’esprit
+L’une fournit toujours des choses agréables ;
+L’autre en moins d’un moment lasse les regardants[N 5].
+Ô ! que de grands Seigneurs, au Léopard semblables,
+         N’ont que l’habit pour tous talents ! `)
+    })
 
+    document.getElementById('storyRoyaume').addEventListener('dblclick',(e)=>{
+        e.preventDefault()
+        navigator.clipboard.writeText(`L'histoire du Cameroun est marquée par d'importants mouvements de populations qui ont fait du pays une véritable « Afrique en miniature ». Depuis les peuples forestiers originels jusqu'aux grands flux précoloniaux, ces migrations ont façonné la diversité culturelle et linguistique actuelle. 
+🌳 Les populations originelles
+Les Baka, Bakola, Bagyeli et Bedzang (souvent désignés sous le terme de Pygmées) sont considérés comme les premiers habitants. Présents depuis des millénaires, ils occupent traditionnellement les zones forestières du Sud et de l’Est. 
+Les grandes vagues précoloniales
+Avant l'arrivée des Européens, le pays a connu deux axes migratoires majeurs qui ont redéfini son organisation politique et sociale : 
+
+    L'expansion Bantoue : Partie de la zone frontalière entre le Cameroun et le Nigeria, cette migration a introduit l'agriculture et la sédentarisation dans le Sud et le Centre.
+    La vague du Nord (Soudanais et Peuls) :
+        Au XVIIIe siècle, les Fulbé (Peuls) arrivent du Bornou (actuel Nigeria/Niger).
+        En 1808, le Jihad d'Adama transforme le Nord en émirats, poussant certaines populations locales (« Kirdi ») vers les montagnes refuges.
+    Les migrations des Grassfields : Les peuples Bamiléké, Tikar et Bamoun se sont installés dans les hauts plateaux de l'Ouest, y développant des chefferies et des systèmes politiques complexes. 
+
+🚢 L'influence européenne et coloniale 
+Les contacts avec l'extérieur ont entraîné de nouveaux types de déplacements forcés ou économiques : 
+
+    Période portugaise (1472) : L'arrivée de Fernão do Pó marque le début de la traite négrière, qui a provoqué des dépeuplements massifs dans certaines régions côtières.
+    Époque allemande (1884-1916) : L'administration coloniale a instauré le travail forcé pour la construction du chemin de fer et des plantations (cacao, café), provoquant des migrations internes forcées vers le littoral.
+    Partition (1916-1960) : Après la Première Guerre mondiale, le pays est divisé entre la France et le Royaume-Uni, créant une frontière linguistique qui influence encore aujourd'hui les flux migratoires internes. 
+
+🌍 Dynamiques contemporaines
+Aujourd'hui, les migrations sont principalement dictées par des facteurs économiques et sécuritaires :
+
+    Exode rural : Un flux massif vers les métropoles comme Douala et Yaoundé, où les migrants représentent plus de 60 % de la population masculine adulte.
+    Migrations régionales : Le Cameroun accueille de nombreuses communautés étrangères, notamment des Maliens (très présents dans le secteur informel) et des réfugiés des pays voisins (Tchad, RCA, Nigeria).
+    Émigration : Les principales destinations des Camerounais vers l'étranger sont la France, le Gabon, le Nigeria et les États-Unis.`)
+        alert('histoire des migrations copier avec succès!')
+    })
+     document.getElementById('commerce').addEventListener('dblclick',(e)=>{
+        e.preventDefault()
+        navigator.clipboard.writeText(`Le commerce au Cameroun a commencé par des échanges de marchandises avec les Portugais avant de devenir un centre majeur de la traite négrière transatlantique. 
+🦐 L'arrivée des Portugais (XVe siècle) 
+Les navigateurs portugais sont les premiers Européens à atteindre les côtes camerounaises.
+
+    1472 : Fernando Póo arrive dans l'estuaire du Wouri.
+    Rio dos Camarões : Ébloui par l'abondance de grosses crevettes, il nomme le fleuve "Rivière des Crevettes", origine du nom "Cameroun".
+    Échanges initiaux : Les commerçants portugais troquent des produits manufacturés (tissus, alcool, miroirs, armes à feu) contre de l'ivoire, du poivre et de l'or. 
+
+⛓️ La traite négrière au Cameroun 
+Rapidement, la demande de main-d'œuvre pour les plantations en Amérique transforme ce commerce en traite humaine. 
+Les sites majeurs de traite
+
+    Bimbia : Situé sur la côte Sud-Ouest, c'était le principal port d'embarquement des esclaves au Cameroun.
+    Estuaire du Wouri : Les localités comme Akwa Town, Bell Town et Bonabéri servaient de comptoirs commerciaux.
+    Douala : Le peuple Douala jouait un rôle clé d'intermédiaire entre les Européens et les populations de l'intérieur. 
+
+Organisation du trafic
+
+    Sources d'approvisionnement : Les esclaves provenaient principalement des hauts plateaux de l'Ouest (Grassfields) et du Nord du pays.
+    Méthodes de capture : Contrairement à d'autres régions, le prélèvement se faisait souvent sans raids armés massifs, mais via des réseaux commerciaux locaux complexes.
+    Commerce triangulaire : Le Cameroun s'inscrivait dans le circuit liant l'Europe (marchandises), l'Afrique (esclaves) et l'Amérique (matières premières). 
+
+📉 Déclin et fin de la traite (XIXe siècle)
+
+    XIXe siècle : La pression britannique pour l'abolition de l'esclavage s'intensifie.
+    Traités d'interdiction : Les chefs Douala signent des traités avec les Britanniques pour mettre fin au commerce humain en échange d'indemnités.
+    Transition économique : Le commerce des esclaves est progressivement remplacé par celui de l'huile de palme et de l'ivoire. 
+
+Si vous le souhaitez, je peux approfondir un point précis :
+
+    L'histoire détaillée du site de Bimbia
+    Le rôle des intermédiaires Douala
+    La transition vers le commerce de l'huile de palme`)
+        alert('histoire du commerce camerounais copier avec succès!') }) 
+        document.getElementById('colonisation').addEventListener('dblclick',(e)=>{
+        e.preventDefault()
+        navigator.clipboard.writeText(`La colonisation allemande au Cameroun (1884 – 1916) marque la naissance du pays dans ses frontières modernes sous le nom de Kamerun. Cette période est caractérisée par une administration rigoureuse, des travaux d'infrastructure massifs et une exploitation économique intense. 
+📅 Chronologie Clé
+
+    12 juillet 1884 : Signature du Traité Germano-Douala. Les rois Bell et Akwa cèdent leur souveraineté commerciale à l'Empire allemand.
+    14 juillet 1884 : Gustave Nachtigal hisse le drapeau allemand à Douala.
+    1884 – 1900 : Conquête de l'arrière-pays et soumission des royaumes locaux par la force (Schutztruppe).
+    1911 : Traité Maroc-Congo. La France cède des territoires à l'Allemagne (Neukamerun) en échange de son retrait du Maroc.
+    1914 – 1916 : Campagne du Cameroun durant la Première Guerre mondiale. Les forces alliées (françaises et britanniques) chassent les Allemands. 
+
+🏗️ L'Héritage Allemand
+L'occupation allemande a laissé des traces indélébiles, encore visibles aujourd'hui, notamment dans les infrastructures et l'urbanisme. 
+🏛️ Vestiges Architecturaux
+
+    Palais de Buea : Ancienne résidence du gouverneur Jesko von Puttkamer, située au pied du Mont Cameroun.
+    Phare de Kribi : Construit en 1906 pour guider les navires de commerce.
+    Pagode de Douala : Ancien palais des rois Manga Bell.
+    Églises et écoles : De nombreuses missions chrétiennes (comme à Kribi ou Édéa) datent de cette époque. 
+
+🚆 Économie et Transport
+Les Allemands ont lancé les grands chantiers pour faciliter l'exportation des matières premières (huile de palme, cacao, caoutchouc) : 
+
+    Chemin de fer : Construction du "Mittellandbahn" (vers le centre) et du "Nordbahn" (vers l'ouest).
+    Ports : Modernisation du port de Douala et création de celui de Kribi.
+    Plantations : Création de vastes domaines agricoles dans la région du Sud-Ouest. 
+
+⚠️ Un Régime de Rigueur
+Malgré le développement matériel, la colonisation fut marquée par une extrême dureté envers les populations locales :
+
+    Travail forcé : Utilisé massivement pour les chantiers ferroviaires et les plantations.
+    Répression : Exécutions de chefs résistants, comme le roi Rudolf Manga Bell et son secrétaire Adolf Ngoso Din, pendus en 1914 pour haute trahison.
+    Justice militaire : Un système policier brutal imposé pour maintenir l'ordre colonial. 
+
+🔚 La Fin du Protectorat
+Après la défaite allemande de 1916, le territoire est confié à la France et à la Grande-Bretagne sous mandat de la Société des Nations (SDN). Ce partage est à l'origine de la division linguistique actuelle du Cameroun entre anglophones et francophones. `)
+        alert('histoire de la Colonisation Allemande copier avec succès!')
+    }) 
+    document.getElementById('mandat').addEventListener('dblclick',(e)=>{
+        e.preventDefault()
+        navigator.clipboard.writeText(`Après la défaite de l'Allemagne lors de la Première Guerre mondiale, le Cameroun a été divisé en deux zones distinctes, placées sous mandats internationaux. 
+📅 Chronologie Clé
+
+    1916 : Partage de facto du territoire après le départ des Allemands.
+    10 juillet 1919 : Déclaration de Londres officialisant la ligne de démarcation.
+    20 juillet 1922 : La Société des Nations (SDN) confirme officiellement les mandats de classe B.
+    1946 : Transformation des mandats en territoires sous tutelle de l'ONU. 
+
+Le Mandat Français (Cameroun oriental) 
+La France a administré la plus grande partie du territoire (environ 4/5e). 
+
+    Statut : Bien que sous mandat, il a été géré de manière similaire aux colonies de l'Afrique Équatoriale Française (AEF).
+    Politique : Mise en place d'une administration directe avec un fort accent sur l'assimilation et le développement des infrastructures (chemins de fer, routes).
+    Siège : Yaoundé est devenue la capitale politique.
+    Fin du mandat : Indépendance obtenue le 1er janvier 1960. 
+
+Le Mandat Britannique (British Cameroons) 
+Le Royaume-Uni a reçu une bande de terre le long de la frontière avec le Nigeria (environ 1/5e du pays). 
+
+    Statut : Divisé administrativement en deux zones : le Northern Cameroons et le Southern Cameroons.
+    Politique : Administration indirecte (Indirect Rule), gérée comme une extension des provinces du Nigeria.
+    Siège : Buea était le centre administratif du Sud.
+    Fin du mandat : Suite au référendum de 1961, le Nord a rejoint le Nigeria et le Sud a rejoint la République du Cameroun. 
+
+⚖️ Comparaison des Systèmes
+Caractéristique	Mandat Français	Mandat Britannique
+Superficie	~432 000 km² (80%)	~88 000 km² (20%)
+Style de gestion	Administration directe centralisée	Administration indirecte (via le Nigeria)
+Objectif	Développement économique et infrastructures	Maintien de l'ordre à moindre coût
+Héritage	Système juridique civil, langue française	Système de Common Law, langue anglaise
+🔍 Conséquences Historiques
+Cette division a durablement marqué l'identité nationale du pays :
+
+    Bilinguisme : Le Cameroun est aujourd'hui l'un des rares pays officiellement bilingues en Afrique.
+    Réunification : Le 1er octobre 1961 a marqué la création de la République Fédérale, tentant de fusionner ces deux héritages coloniaux.
+    Tensions : La différence de gestion entre les deux zones est à l'origine de certaines revendications politiques actuelles liées à la "question anglophone".`)
+        alert('histoire du Mandats Francais et Britanique copier avec succès!')
+    }) 
+    document.getElementById('independance').addEventListener('dblclick',(e)=>{
+        e.preventDefault()
+        navigator.clipboard.writeText(``)
+        alert("l'histoire de l'independance du cameroun copier avec succès!")
+    })
 </script>
 </html>

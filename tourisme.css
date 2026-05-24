@@ -170,6 +170,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 50vh;
+    cursor: pointer;
 }
  .cardreverse {
     flex-direction: column-reverse;
